@@ -5,7 +5,6 @@ output:
     toc: no
 
 ---
-
 ## Objectives
 
 * Git has become central to collaborative computing, sharing of data and code, and open source software. A professional statistician should have at least a working knowledge of git. Git is slowly becoming incorporated into more undergraduate and graduate courses, but likely this class spans a wide range from git novices to experts. If this assignment is trivial for you, consider helping others who are new to git.
@@ -21,154 +20,29 @@ output:
     iii.  Use the self-teaching materials at [GitHub Learning Lab](https://lab.github.com/) or [Atlassian](https://www.atlassian.com/git/tutorials) to spend an hour or so advancing your knowledge of git. The Atlassian tutorials are better for learning command-line git, but they teach in the context of Bitbucket which is currently less popular than GitHub although both are based around the same git program. The [Introduction to GitHub module](https://lab.github.com/githubtraining/introduction-to-github) may be a good starting point for beginners. Alternatively, browse Karl Broman's practical and minimal [git/github tutorial](http://kbroman.org/github_tutorial/) which this assignment draws on.
 
     iv. Report briefly on your past experience with git, and what you learned while studying for this homework. Edit the `hw09.Rmd` file in the `810f22` git repository, compile this to html (for example, using Rstudio) and submit your report via Canvas as an html file.
-
-YOUR ANSWER HERE. YOU CAN DELETE THE REMAINDER OF THIS FILE IF YOU WANT TO.
-
---------------
-
---------------
-
-
-## Getting started with git and GitHub
-
-1. Get an account on GitHub, if you do not already have one.
-
-2. If git is not installed already, download and install it from [git-scm.com/downloads](http://git-scm.com/downloads).
-
-3. Set up your local git installation with your user name and email. Open a terminal and type:
-
-```
-$ git config --global user.name "Your name here"
-$ git config --global user.email "your_email@example.com"
-```
-
-Don’t type the \$; that just indicates that you’re doing this at the command line. On Windows, you can run these commands in the Linux emulator provided by the git client. Disclaimer: I do not run a Windows machine, so please let me know if Windows instructions are incorrect or out-of-date.
-
-4. Set up secure SSH communication to GitHub, following the [GitHub instructions](https://help.github.com/articles/generating-ssh-keys/). 
-
-
-------------------
-
------------------
-
-## Basic git concepts
-
-* **repository**. A representation of the current state of a collection of files, and its entire history of modifications. 
-
-* **commit**. A commit is a change to one or many of the files in repository. The repository therefore consists of a directed graph of all previous commits.
-
-* **branch**. Multiple versions of the collection of files can exist simultaneously in the repository. 
-These versions are called branches. 
-Branches may represent new functionality, or a bug fix, or different versions of the code with slightly different goals. 
-
-    + Branches have names. A special name called **master** is reserved for the main development branch.
-
-    + Branches can be **created**, **deleted** or **merged**. 
-
-    + Each new commit is assigned to a branch.
-
-* We now have the pieces in place to visualize the **graph** of a git repository. <small>[Picture credit: [hades.github.io](http://hades.github.io/media/git/git-history.png)]</small>
-
-<br>
-![git graph](git-history.png)
-
-* Take some time to identify the commits, branching events, and merging events on the graph.
-
-    + Note that branch names actually are names for the most recent commit on that branch, known as the **head** of the branch.
-
------------------
-
-----------------
-
-## An elementary task: cloning a remote repository
-
-* In a suitable directory, type
-
-```
-git clone git@github.com:ionides/810f22
-```
-
-* You can also clone using https, e.g.,
-
-```
-git clone https://github.com/ionides/810f22
-```
-
-* GitHub requires an SSH connection for some actions, and so the previous code is preferable. If all you want to do is inspect a copy of the repository locally, https is sufficient.
-
-* You now have a local copy of the STATS 810 class materials.
-
-* The local repository remembers the address of the remote repository it was cloned from.
-
-    + You can pull any changes from the remote repository to your local repository using **git pull**.
-
-```
-[ionides@doob 810f22]$ git pull
-Already up-to-date.
-```
-
-----------------
-
----------------
-
-## A workflow to contribute to the 810f22 GitHub repository
-
-* If you tell me your GitHub username, I could in principle add you as a developer of the `ionides/810f22` GitHub repository. Then you can commit changes directly.
-
-* However, here, let's practice something a bit more fancy. We will follow a standard workflow for proposing a change to someone else's GitHub repository.
-
-### Forking a project and making a pull request
-
-**Forking** is making your own GitHub copy of a repository. A **pull request** is a way to ask the owner of the repository to pull your changes back into their version. The following steps guide you through a test example.
-
-1. Go to `ionides/810f22` on GitHub, for example by searching for `810f22`.
-
-2. Click `fork` at the top right-hand corner, and follow instructions to add a forked copy to your own GitHub account. It should now show up in your account as `my_username/810f22`.
-
-3. Clone a local copy of the forked repository to your machine, e.g.,
-
-```
-git clone git@github.com:my_username/810f22
-```
-
-4. Move to the `810f22` directory and edit the file `sign_here.html` to check your own name.
-
-5. It can be helpful to type
-
-```
-git status
-```
-
-regularly to check on the current state of the repository.
-
-
-5. Commit this change to your local version of the forked `810f22`,
-
-```
-git add sign_here.html
-git commit -m "sign up for my_name"
-```
-
-and see how the `git status` has changed. Another useful command for checking on the recent action in the repository is
-
-```
-git log
-```
-
-6. Push this change to your forked copy of `810f22` on GitHub:
-
-```
-git push
-```
-
-7. On the GitHub web site for the `my_username/810f22` fork, click `New pull request` and follow instructions. When you have successfully placed your pull request, the owner of the parent repository (me) will be notifed. I will then pull the modifications from your fork into `ionides/810f22`.
-
-
--------------
-
-
-
-
- 
-
-
+    
+  
+
+# My response:
+After finishing my undergraduate degree I worked for a few years in data science 
+roles. I many of these roles I collaborated on projects through the use of git 
+and github. Before starting the PhD I completed a masters degree and used git / Github
+in many courses. I mostly work with git using its command line api. Despite 
+years of using git I would say my knowledge is still fairly superficial and don't 
+know much beyond creating my own branch, pushing changes, pulling changes, and 
+making pull requests. Occasionally if I need to retract changes I have committed 
+I will use `git reset`. 
+
+Through reading the tutorials on Atlassian, I learned about git subtree. I had 
+always imagined that it would be a bad idea to clone one repository within another
+but now after reading this it makes a lot more sense, in particular if you are 
+building software that has dependencies which are likely continually updating. 
+I also spent some time reading in depth about `git reset`, `git checkout`, and `git revert`.
+As I had mentioned before, I have often used `git reset`, but this has almost 
+exclusively been to remove a file from the staging area if I decided not to commit 
+changes for that particular file. Through reading, I learned about how the different 
+commands and different arguments correspond to changes the current working
+directory, staging area, and commit history. Before I had avoided making grave
+errors while using `git reset` by simply using it for specific files, but know that 
+I know about the `--mixed`, `--soft`, and `--hard` arguments I will be less likely to 
+make catastrophic errors when using `git reset` with a broader scope.
