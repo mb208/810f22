@@ -35,15 +35,17 @@ A [free pdf copy](http://www.nap.edu/catalog.php?record_id=12192) is available o
 
 * [Homework 9. Internet repositories for collaboration and open-source research: git and GitHub](hw09.html).
 
-<!--
-
 * [Homework 10. Linux and the open source software movement](hw10.pdf).
 
 * [Homework 11. Parallel statistical computing](hw11.pdf).
 
-* [Homework 12. Statistical computing on greatlakes](hw12.pdf).
 
-* [Homework 13. A workflow for reproducible statistical research: combining Latex and R with knitr](hw13.pdf)
+* [Homework 12. A workflow for reproducible statistical research: combining Latex and R with knitr](hw12.pdf)
+
+<!--
+
+* [Homework 13. Statistical computing on greatlakes](hw13.pdf).
+
 
 * [Homework 14. A research seminar](hw14.pdf)
 
